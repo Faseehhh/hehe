@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/icon type">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>{% block title %}  {% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+
+ <!-- dataTable -->
+ <link href="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.13.3/b-2.3.5/b-colvis-2.3.5/b-html5-2.3.5/b-print-2.3.5/fh-3.3.1/r-2.4.0/sp-2.1.1/sl-1.6.1/datatables.min.css" rel="stylesheet"/>
+  
+ <!-- lightgallery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&fa   mily=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <!-- JS bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/30ff5f2a0c.js" crossorigin="anonymous"></script>
+
+  <script src=" https://bootstrapmade.com/reveal-bootstrap-corporate-template/"></script>
+  
+  
+</head>
+<body>
+  
+    {% include "includes/header.html" %}
+    
+    {% block content %}
+    
+    {% endblock %}
+
+</body>
+</html>
+    
+
+
+   
+
